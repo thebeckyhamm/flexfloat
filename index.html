@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexFloat</title>
+    <link rel="stylesheet" href="css/flexfloat.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Without Flexbox</h2>
+    <div class="grid">
+        <div class="box col-25">25%</div>
+        <div class="box col-25">25%
+            <p>how annoying.</p>
+        </div>            
+        <div class="box col-25">25%</div>
+        <div class="box col-25">25%</div>
+    </div>
+    <div class="grid">
+        <div class="box col-33">33%</div>
+        <div class="box col-66">
+            66%
+            <p>and some extra text here which throws off alignment</p>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="box col-equal">unknown</div>
+        <div class="box col-equal">unknown</div>
+        <div class="box col-equal">unknown</div>
+        <div class="box col-equal">unknown</div>
+        <div class="box col-equal">unknown with some long text so its a bit longer than the rest.  designers hate this shit.</div>
+    </div>
+
+<h2>With Flexbox</h2>
+    <section class="flexbox">
+        <div class="grid">
+            <div class="box col-25">25%</div>
+            <div class="box col-25">25%
+                <p>how annoying.</p>
+            </div>            
+            <div class="box col-25">25%</div>
+            <div class="box col-25">25%</div>
+        </div>
+        <div class="grid">
+            <div class="box col-33">33%</div>
+            <div class="box col-66">
+                66%
+                <p>and some extra text here which throws off alignment</p>
+
+            </div>
+        </div>
+        <div class="grid">
+            <div class="box col-equal">unknown</div>
+            <div class="box col-equal">unknown</div>
+            <div class="box col-equal">unknown</div>
+            <div class="box col-equal">unknown</div>
+            <div class="box col-equal">unknown with some long text so its a bit longer than the rest.  designers hate this shit.</div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>

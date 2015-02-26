@@ -1,0 +1,19 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.box {
+    background: pink;
+    border: 2px solid red;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.flexbox {
+    .box {
+        background-color: mintcream;
+        border-color: darkseagreen;
+    }
+}
+
+

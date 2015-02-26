@@ -1,0 +1,98 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+
+$gutter: 1rem; 
+$min-width: 100px; // minimum width of item before it starts wrapping for you
+$baby-bear: 30rem;
+
+@mixin bp($width) {
+    @media (min-width: $width) {
+        @content;       
+    }
+}
+
+.grid:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.flexbox .grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+[class*="col-"] {
+    width: calc(100% - #{$gutter * 2});      
+    @include bp($baby-bear) {
+        float: left;  
+    }
+}
+
+@include bp($baby-bear) {
+    $i: 5;
+
+    @while $i <= 100 {
+        .col-#{$i} {
+            width: calc(#{$i}% - #{$gutter * 2});
+        }
+        $i: $i + 5;
+    } 
+
+    .col-33 {
+        width: calc(33.33% - #{$gutter * 2});
+    }   
+
+    .col-66 {
+        width: calc(66.66% - #{$gutter * 2});
+    }
+
+}
+
+
+.col-equal {
+    display: inline-block;
+    width: auto;
+}
+
+.flexbox {
+
+    [class*="col-"] {
+        float: none;
+        min-width: $min-width;
+        width: auto;
+    }
+
+    $i: 5;
+
+    @while $i <= 100 {
+        .col-#{$i} {
+            flex: #{$i} 0 0;
+        }
+        $i: $i + 5;
+    } 
+
+    .col-33 {
+        flex: 33.33 0 0;
+    }   
+
+    .col-66 {
+        flex: 66.66 0 0;
+    }
+
+    .col-equal {
+        flex: 1 0 0;
+    }
+
+    .col-spaced {
+        flex: 1 0 auto;
+    }
+
+
+}
+
+

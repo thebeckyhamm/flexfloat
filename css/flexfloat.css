@@ -1,0 +1,122 @@
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+.grid:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.flexbox .grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between; }
+
+[class*="col-"] {
+  width: calc(100% - 2rem); }
+  @media (min-width: 30rem) {
+    [class*="col-"] {
+      float: left; } }
+
+@media (min-width: 30rem) {
+  .col-5 {
+    width: calc(5% - 2rem); }
+  .col-10 {
+    width: calc(10% - 2rem); }
+  .col-15 {
+    width: calc(15% - 2rem); }
+  .col-20 {
+    width: calc(20% - 2rem); }
+  .col-25 {
+    width: calc(25% - 2rem); }
+  .col-30 {
+    width: calc(30% - 2rem); }
+  .col-35 {
+    width: calc(35% - 2rem); }
+  .col-40 {
+    width: calc(40% - 2rem); }
+  .col-45 {
+    width: calc(45% - 2rem); }
+  .col-50 {
+    width: calc(50% - 2rem); }
+  .col-55 {
+    width: calc(55% - 2rem); }
+  .col-60 {
+    width: calc(60% - 2rem); }
+  .col-65 {
+    width: calc(65% - 2rem); }
+  .col-70 {
+    width: calc(70% - 2rem); }
+  .col-75 {
+    width: calc(75% - 2rem); }
+  .col-80 {
+    width: calc(80% - 2rem); }
+  .col-85 {
+    width: calc(85% - 2rem); }
+  .col-90 {
+    width: calc(90% - 2rem); }
+  .col-95 {
+    width: calc(95% - 2rem); }
+  .col-100 {
+    width: calc(100% - 2rem); }
+  .col-33 {
+    width: calc(33.33% - 2rem); }
+  .col-66 {
+    width: calc(66.66% - 2rem); } }
+
+.col-equal {
+  display: inline-block;
+  width: auto; }
+
+.flexbox [class*="col-"] {
+  float: none;
+  min-width: 100px;
+  width: auto; }
+.flexbox .col-5 {
+  flex: 5 0 0; }
+.flexbox .col-10 {
+  flex: 10 0 0; }
+.flexbox .col-15 {
+  flex: 15 0 0; }
+.flexbox .col-20 {
+  flex: 20 0 0; }
+.flexbox .col-25 {
+  flex: 25 0 0; }
+.flexbox .col-30 {
+  flex: 30 0 0; }
+.flexbox .col-35 {
+  flex: 35 0 0; }
+.flexbox .col-40 {
+  flex: 40 0 0; }
+.flexbox .col-45 {
+  flex: 45 0 0; }
+.flexbox .col-50 {
+  flex: 50 0 0; }
+.flexbox .col-55 {
+  flex: 55 0 0; }
+.flexbox .col-60 {
+  flex: 60 0 0; }
+.flexbox .col-65 {
+  flex: 65 0 0; }
+.flexbox .col-70 {
+  flex: 70 0 0; }
+.flexbox .col-75 {
+  flex: 75 0 0; }
+.flexbox .col-80 {
+  flex: 80 0 0; }
+.flexbox .col-85 {
+  flex: 85 0 0; }
+.flexbox .col-90 {
+  flex: 90 0 0; }
+.flexbox .col-95 {
+  flex: 95 0 0; }
+.flexbox .col-100 {
+  flex: 100 0 0; }
+.flexbox .col-33 {
+  flex: 33.33 0 0; }
+.flexbox .col-66 {
+  flex: 66.66 0 0; }
+.flexbox .col-equal {
+  flex: 1 0 0; }
+.flexbox .col-spaced {
+  flex: 1 0 auto; }
