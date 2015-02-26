@@ -25,7 +25,7 @@ Modernizr adds a `flexbox` class to your html tag if it's supported. The CSS wil
 
 **Standard Classes**
 
-```
+```css
 .col-5    // 5% wide (minus any gutter margin)
 .col-10   // 10% wide
 .col-15   // 15% wide
@@ -38,7 +38,7 @@ Modernizr adds a `flexbox` class to your html tag if it's supported. The CSS wil
 
 **Other Classes**
 
-```
+```css
 .col-equal // use for an unknown number of columns where you want them to all be an even width
 
 .col-spaced // use for an unknown number of columns where you want them all spaced evenly with their own relative widths.
